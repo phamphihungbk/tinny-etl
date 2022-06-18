@@ -7,15 +7,15 @@ DATE_FORMAT = '%H:%M:%S'
 
 class ServiceFactory:
 
-	@staticmethod
-	def get_logger(name: str) -> Logger:
-		basicConfig(
-			filename=LOG_FILE_NAME,
-			filemode='a',
-			format=LOG_FORMAT,
-			datefmt=DATE_FORMAT,
-			level=INFO
-		)
-		logger = getLogger(name)
+    @staticmethod
+    def get_logger(name: str) -> Logger:
+        basicConfig(
+            filename=LOG_FILE_NAME,
+            filemode='a',
+            format=LOG_FORMAT,
+            datefmt=DATE_FORMAT,
+            level=INFO
+        )
+        logger = getLogger(name)
 
-		return logger
+        return logger
