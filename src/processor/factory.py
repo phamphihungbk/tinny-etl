@@ -5,6 +5,7 @@ from src.processor.wwc_processor import WWCProcessor
 
 
 class ProcessorFactory:
+
 	@staticmethod
 	def create(name: str, logger: Logger):
 		if name == 'hb':
